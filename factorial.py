@@ -10,9 +10,9 @@ def factorial(num):
     6
 
     """
-
-    if num == 1:
-        return num
+    # Base case
+    if num == 0:
+        return 1
     else:
         return num * factorial(num - 1)
 
