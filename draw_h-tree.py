@@ -9,6 +9,7 @@ b         d <
 # Time - (c*depth)
 # Space - (depth)
 
+
 def draw_h_tree(x, y, length, depth):
   if depth == 0:
     return
@@ -33,7 +34,8 @@ def draw_h_tree(x, y, length, depth):
     #draw_h_tree(x -(length // 2), y + (length // 2), length ** (1/2), depth - 1) # upper left  H-tree
     draw_h_tree(x +(length // 2), y - (length // 2), length ** (1/2), depth - 1) # lower right H-tree
     draw_h_tree(x +(length // 2), y + (length // 2), length ** (1/2), depth - 1) # upper right H-tree
-    
+
+
 def drawLine(x1, y1, x2, y2):
   # draws line, assume implementation available
-  print "Practice makes Perfect!"   
+  print("Practice makes Perfect!")
